@@ -19,6 +19,7 @@
         font-size: 80px;
         font-family: $main-font;
         font-weight: 700;
+        animation: startAppMainContent both 1s .3s;
 
         &--color {
             font-family: $main-font;
@@ -34,18 +35,19 @@
         border-radius: 31px;
         background-color: white;
         color: $black-color;
+        animation: startAppMainContent both 1s .5s;
 
         .welcome {
             margin: 9px auto 11px;
             font-family: $main-font;
             font-size: 20px;
-            font-weight: 500;
+            font-weight: 400;
         }
 
         .txt1 {
             font-family: $main-font;
             font-size: 15px;
-            font-weight: 400;
+            font-weight: 300;
         }
 
         .button {
