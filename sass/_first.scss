@@ -1,7 +1,7 @@
 .start {
     position: absolute;
     top: 0;
-    left: 0%;
+    left: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -11,6 +11,7 @@
     height: 100%;
     background-color: $black-color;
     color: white;
+    transition: .3s ease-in-out;
     z-index: 1;
 
     &__main-text {
@@ -51,9 +52,11 @@
         }
 
         .button {
+            cursor: pointer;
             position: absolute;
             @include center-bottom-item;
             @include button-config;
+            animation: pulse infinite 3s 5s;
 
             .ico {
                 @include ico-config;
