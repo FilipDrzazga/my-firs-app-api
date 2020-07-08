@@ -1,0 +1,61 @@
+.start {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background-color: $black-color;
+    color: white;
+    z-index: 1;
+
+    &__main-text {
+        align-self: flex-end;
+        margin-bottom: 64px;
+        font-size: 80px;
+        font-family: $main-font;
+        font-weight: 700;
+
+        &--color {
+            font-family: $main-font;
+            color: $turqu-color;
+        }
+    }
+
+    &__main-content {
+        position: relative;
+        align-self: flex-start;
+        width: 272px;
+        height: 133px;
+        border-radius: 31px;
+        background-color: white;
+        color: $black-color;
+
+        .welcome {
+            margin: 9px auto 11px;
+            font-family: $main-font;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .txt1 {
+            font-family: $main-font;
+            font-size: 15px;
+            font-weight: 400;
+        }
+
+        .button {
+            position: absolute;
+            @include center-bottom-item;
+            @include button-config;
+
+            .ico {
+                @include ico-config;
+            }
+        }
+    }
+}

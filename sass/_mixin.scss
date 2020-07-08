@@ -1,0 +1,43 @@
+@mixin center-bottom-item {
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+@mixin center-item {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin button-config {
+    border-radius: 50px;
+    border: none;
+    background-color: $turqu-color;
+    width: 62px;
+    height: 62px;
+}
+
+@mixin ico-config {
+    font-size: 25px;
+    color: white;
+}
+
+@mixin font-style-conteiner {
+    align-self: flex-start;
+    flex-basis: 50%;
+    font-size: 20px;
+    font-family: $main-font;
+    font-weight: 300;
+}
+
+@mixin after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 30px;
+    display: block;
+    width: 283px;
+    height: 1px;
+    background-color: $dark-snow-color;
+}
