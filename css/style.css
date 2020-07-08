@@ -63,8 +63,8 @@
   border-radius: 31px;
   background-color: white;
   color: #202121;
-  -webkit-animation: onePulse both 1s 1s;
-          animation: onePulse both 1s 1s;
+  -webkit-animation: onePulse both 1s 0.9s;
+          animation: onePulse both 1s 0.9s;
 }
 
 .start__main-content .welcome {
@@ -92,8 +92,8 @@
   background-color: #5ee2d2;
   width: 62px;
   height: 62px;
-  -webkit-animation: pulse infinite 3s 1.2s;
-          animation: pulse infinite 3s 1.2s;
+  -webkit-animation: pulse infinite 3s 1.1s;
+          animation: pulse infinite 3s 1.1s;
 }
 
 .start__main-content .button .ico {
@@ -137,8 +137,11 @@
   font-size: 20px;
   font-family: "Ubuntu", arial;
   font-weight: 700;
-  -webkit-animation: slideFromRight 1s 2s both ease-in;
-          animation: slideFromRight 1s 2s both ease-in;
+}
+
+.search__main-text--animation {
+  -webkit-animation: slideFromRight .7s both ease-in;
+          animation: slideFromRight .7s both ease-in;
 }
 
 .search__main-text--color {
@@ -146,7 +149,7 @@
   color: #5ee2d2;
 }
 
-.search .button {
+.search__button {
   -ms-flex-item-align: end;
       align-self: flex-end;
   border-radius: 50px;
@@ -155,11 +158,14 @@
   width: 62px;
   height: 62px;
   margin: 0px 15px -10px;
-  -webkit-animation: onePulse both 1s 3s;
-          animation: onePulse both 1s 3s;
 }
 
-.search .button .ico {
+.search__button--aply {
+  -webkit-animation: onePulse both 1s .7s;
+          animation: onePulse both 1s .7s;
+}
+
+.search__button .ico {
   font-size: 25px;
   color: white;
 }
@@ -182,8 +188,11 @@
   border-radius: 31px;
   -webkit-box-shadow: 1px 1px 20px #DEDEDE;
           box-shadow: 1px 1px 20px #DEDEDE;
-  -webkit-animation: onePulse both 1s 3.5s;
-          animation: onePulse both 1s 3.5s;
+}
+
+.search__input--animation {
+  -webkit-animation: onePulse both 1s .9s;
+          animation: onePulse both 1s .9s;
 }
 
 .search .country {
@@ -206,8 +215,11 @@
   border-radius: 31px;
   -webkit-box-shadow: 1px 1px 20px #DEDEDE;
           box-shadow: 1px 1px 20px #DEDEDE;
-  -webkit-animation: onePulseSize1 both 1s 4s;
-          animation: onePulseSize1 both 1s 4s;
+}
+
+.search .country--animation {
+  -webkit-animation: onePulseSize1 both 1s 1.1s;
+          animation: onePulseSize1 both 1s 1.1s;
 }
 
 .search .country__flag {

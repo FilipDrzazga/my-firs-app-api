@@ -21,7 +21,10 @@
         font-size: 20px;
         font-family: $main-font;
         font-weight: 700;
-        animation: slideFromRight 1s 2s both ease-in;
+
+        &--animation {
+            animation: slideFromRight .7s both ease-in;
+        }
 
         &--color {
             font-family: $main-font;
@@ -29,11 +32,14 @@
         }
     }
 
-    .button {
+    &__button {
         align-self: flex-end;
         @include button-config;
         margin: 0px 15px -10px;
-        animation: onePulse both 1s 3s;
+
+        &--aply {
+            animation: onePulse both 1s .7s;
+        }
 
         .ico {
             @include ico-config;
@@ -56,7 +62,10 @@
         border: none;
         border-radius: 31px;
         box-shadow: $border-shadow;
-        animation: onePulse both 1s 3.5s;
+
+        &--animation {
+            animation: onePulse both 1s .9s;
+        }
     }
 
     .country {
@@ -71,7 +80,10 @@
         background-color: white;
         border-radius: 31px;
         box-shadow: $border-shadow;
-        animation: onePulseSize1 both 1s 4s;
+
+        &--animation {
+            animation: onePulseSize1 both 1s 1.1s;
+        }
 
         &__flag {
             width: 80px;
