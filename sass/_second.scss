@@ -15,12 +15,13 @@
         position: absolute;
         @include center-item;
         top: 3%;
+        left: -100%;
         align-self: flex-end;
         flex-basis: 100%;
         font-size: 20px;
         font-family: $main-font;
         font-weight: 700;
-        animation: slideFromRigh .3s 5s ease-in infinite;
+        animation: slideFromRight 1s 2s both ease-in;
 
         &--color {
             font-family: $main-font;
@@ -32,6 +33,7 @@
         align-self: flex-end;
         @include button-config;
         margin: 0px 15px -10px;
+        animation: onePulse both 1s 3s;
 
         .ico {
             @include ico-config;
@@ -54,6 +56,7 @@
         border: none;
         border-radius: 31px;
         box-shadow: $border-shadow;
+        animation: onePulse both 1s 3.5s;
     }
 
     .country {
@@ -68,6 +71,7 @@
         background-color: white;
         border-radius: 31px;
         box-shadow: $border-shadow;
+        animation: onePulseSize1 both 1s 4s;
 
         &__flag {
             width: 80px;

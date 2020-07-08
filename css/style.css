@@ -45,8 +45,8 @@
   font-size: 80px;
   font-family: "Ubuntu", arial;
   font-weight: 700;
-  -webkit-animation: startAppMainContent both 1s .3s;
-          animation: startAppMainContent both 1s .3s;
+  -webkit-animation: onePulse both 1s .3s;
+          animation: onePulse both 1s .3s;
 }
 
 .start__main-text--color {
@@ -63,8 +63,8 @@
   border-radius: 31px;
   background-color: white;
   color: #202121;
-  -webkit-animation: startAppMainContent both 1s .5s;
-          animation: startAppMainContent both 1s .5s;
+  -webkit-animation: onePulse both 1s 1s;
+          animation: onePulse both 1s 1s;
 }
 
 .start__main-content .welcome {
@@ -92,8 +92,8 @@
   background-color: #5ee2d2;
   width: 62px;
   height: 62px;
-  -webkit-animation: pulse infinite 3s 5s;
-          animation: pulse infinite 3s 5s;
+  -webkit-animation: pulse infinite 3s 1.2s;
+          animation: pulse infinite 3s 1.2s;
 }
 
 .start__main-content .button .ico {
@@ -129,6 +129,7 @@
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   top: 3%;
+  left: -100%;
   -ms-flex-item-align: end;
       align-self: flex-end;
   -ms-flex-preferred-size: 100%;
@@ -136,8 +137,8 @@
   font-size: 20px;
   font-family: "Ubuntu", arial;
   font-weight: 700;
-  -webkit-animation: slideFromRigh .3s 5s ease-in infinite;
-          animation: slideFromRigh .3s 5s ease-in infinite;
+  -webkit-animation: slideFromRight 1s 2s both ease-in;
+          animation: slideFromRight 1s 2s both ease-in;
 }
 
 .search__main-text--color {
@@ -154,6 +155,8 @@
   width: 62px;
   height: 62px;
   margin: 0px 15px -10px;
+  -webkit-animation: onePulse both 1s 3s;
+          animation: onePulse both 1s 3s;
 }
 
 .search .button .ico {
@@ -179,6 +182,8 @@
   border-radius: 31px;
   -webkit-box-shadow: 1px 1px 20px #DEDEDE;
           box-shadow: 1px 1px 20px #DEDEDE;
+  -webkit-animation: onePulse both 1s 3.5s;
+          animation: onePulse both 1s 3.5s;
 }
 
 .search .country {
@@ -201,6 +206,8 @@
   border-radius: 31px;
   -webkit-box-shadow: 1px 1px 20px #DEDEDE;
           box-shadow: 1px 1px 20px #DEDEDE;
+  -webkit-animation: onePulseSize1 both 1s 4s;
+          animation: onePulseSize1 both 1s 4s;
 }
 
 .search .country__flag {
@@ -430,7 +437,7 @@
   }
 }
 
-@keyframes startAppMainContent {
+@-webkit-keyframes onePulse {
   0% {
     -webkit-transform: scale(0);
             transform: scale(0);
@@ -438,6 +445,51 @@
   50% {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes onePulse {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes onePulseSize1 {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes onePulseSize1 {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   100% {
     -webkit-transform: scale(1);
@@ -455,8 +507,8 @@
   10% {
     bottom: 0%;
     left: 50%;
-    -webkit-transform: scale(1.2) translate(-40%, 45%);
-            transform: scale(1.2) translate(-40%, 45%);
+    -webkit-transform: scale(1.4) translate(-35%, 40%);
+            transform: scale(1.4) translate(-35%, 40%);
   }
   20% {
     bottom: 0%;
@@ -500,8 +552,8 @@
   10% {
     bottom: 0%;
     left: 50%;
-    -webkit-transform: scale(1.2) translate(-40%, 45%);
-            transform: scale(1.2) translate(-40%, 45%);
+    -webkit-transform: scale(1.4) translate(-35%, 40%);
+            transform: scale(1.4) translate(-35%, 40%);
   }
   20% {
     bottom: 0%;
@@ -537,23 +589,23 @@
 
 @-webkit-keyframes slideFromRight {
   0% {
-    right: -100%;
+    top: 3%;
+    left: -100%;
   }
-  50% {
-    right: 0%;
-  }
-  0% {
+  100% {
+    top: 3%;
+    left: 50%;
   }
 }
 
 @keyframes slideFromRight {
   0% {
-    right: -100%;
+    top: 3%;
+    left: -100%;
   }
-  50% {
-    right: 0%;
-  }
-  0% {
+  100% {
+    top: 3%;
+    left: 50%;
   }
 }
 /*# sourceMappingURL=style.css.map */
