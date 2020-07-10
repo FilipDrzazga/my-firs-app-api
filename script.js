@@ -15,7 +15,9 @@ class AppCovid {
         this.dailyInfected = document.querySelector('.country__daily-number')
         this.data = document.querySelector('.country__data-number');
 
-        this.flagApiUrl = 'https://www.countryflags.io/';
+        this.counters = [...document.querySelectorAll('[data-target]')];
+
+        this.flagApiUrl = 'https://www.countryflags.io';
         this.statsCovidApiUrl = 'https://api.covid19api.com/summary';
 
         this.submitAllInfo();
@@ -32,13 +34,29 @@ class AppCovid {
         });
     }
 
-    numberWithCommas(x) {
-        return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ".");
+    counterResults() {
+        this.counters.forEach(counter => {
+            counter.textContent = '0';
+
+            const updateCounter = () => {
+                const target = +counter.getAttribute('data-target');
+                const c = +counter.textContent;
+                const increment = 500;
+
+                if (c < target) {
+                    counter.textContent = c + increment;
+                    setTimeout(updateCounter, 1);
+                } else {
+                    counter.textContent = target;
+                }
+            }
+            updateCounter()
+        })
     }
 
     getFlagFromApi() {
         let iso2 = this.input.value;
-        this.img.setAttribute('src', `https://www.countryflags.io/${iso2}/shiny/64.png`);
+        this.img.setAttribute('src', `${this.flagApiUrl}/${iso2}/shiny/64.png`);
     }
 
     getAllStatsFromApi() {
@@ -52,14 +70,13 @@ class AppCovid {
         this.getAllStatsFromApi()
             .then(countries => {
                 let country = countries.find(countries => countries.CountryCode === iso2)
-                console.log(country)
                 return country
             })
             .then(country => {
-                this.allInfected.textContent = this.numberWithCommas(country.TotalConfirmed);
-                this.allRecovered.textContent = this.numberWithCommas(country.TotalRecovered);
-                this.allDeath.textContent = this.numberWithCommas(country.TotalDeaths);
-                this.dailyInfected.textContent = this.numberWithCommas(country.NewConfirmed);
+                this.allInfected.setAttribute('data-target', `${country.TotalConfirmed}`);
+                this.allRecovered.setAttribute('data-target', `${country.TotalRecovered}`);
+                this.allDeath.setAttribute('data-target', `${country.TotalDeaths}`);
+                this.dailyInfected.setAttribute('data-target', `${country.NewConfirmed}`);
                 this.data.textContent = country.Date.slice(0, 10);
                 this.countryName.textContent = country.Country;
             })
@@ -71,6 +88,8 @@ class AppCovid {
         this.searchBtn.addEventListener('click', () => {
             this.getFlagFromApi()
             this.showStatsInApp()
+            this.counterResults()
+            console.log(this.counters)
         })
     }
 }
