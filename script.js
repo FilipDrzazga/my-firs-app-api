@@ -56,11 +56,12 @@ class AppCovid {
                 return country
             })
             .then(country => {
-                this.allInfected.textContent = this.numberWithCommas(country.TotalConfirmed)
-                this.allRecovered.textContent = this.numberWithCommas(country.TotalRecovered)
-                this.allDeath.textContent = this.numberWithCommas(country.TotalDeaths)
-                this.dailyInfected.textContent = this.numberWithCommas(country.NewConfirmed)
+                this.allInfected.textContent = this.numberWithCommas(country.TotalConfirmed);
+                this.allRecovered.textContent = this.numberWithCommas(country.TotalRecovered);
+                this.allDeath.textContent = this.numberWithCommas(country.TotalDeaths);
+                this.dailyInfected.textContent = this.numberWithCommas(country.NewConfirmed);
                 this.data.textContent = country.Date.slice(0, 10);
+                this.countryName.textContent = country.Country;
             })
     }
 
