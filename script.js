@@ -36,11 +36,11 @@ class AppCovid {
 
     counterResults() {
         this.counters.forEach(counter => {
-            counter.textContent = '0';
-
+            counter.innerText = '0'
+            counter.textContent = '0'
             const updateCounter = () => {
-                const target = +counter.getAttribute('data-target');
-                const c = +counter.textContent;
+                let target = +counter.getAttribute('data-target');
+                let c = +counter.textContent;
                 const increment = 500;
 
                 if (c < target) {
@@ -48,9 +48,11 @@ class AppCovid {
                     setTimeout(updateCounter, 1);
                 } else {
                     counter.textContent = target;
+
                 }
             }
             updateCounter()
+
         })
     }
 
@@ -64,6 +66,7 @@ class AppCovid {
             .then(resp => resp.json())
             .then(data => data.Countries)
     }
+
 
     showStatsInApp() {
         let iso2 = this.input.value
@@ -79,6 +82,8 @@ class AppCovid {
                 this.dailyInfected.setAttribute('data-target', `${country.NewConfirmed}`);
                 this.data.textContent = country.Date.slice(0, 10);
                 this.countryName.textContent = country.Country;
+                this.counterResults()
+                console.log(country, this.allInfected, this.allRecovered, this.allDeath, this.dailyInfected)
             })
     }
 
@@ -88,8 +93,7 @@ class AppCovid {
         this.searchBtn.addEventListener('click', () => {
             this.getFlagFromApi()
             this.showStatsInApp()
-            this.counterResults()
-            console.log(this.counters)
+            // this.counterResults()
         })
     }
 }
