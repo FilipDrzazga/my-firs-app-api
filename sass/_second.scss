@@ -301,3 +301,12 @@
     }
 
 }
+
+@media (min-width:640px) {
+    .search {
+        &__input {
+            width: 335px;
+            margin: 10px 150px;
+        }
+    }
+}

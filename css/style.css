@@ -567,6 +567,13 @@
   }
 }
 
+@media (min-width: 640px) {
+  .search__input {
+    width: 335px;
+    margin: 10px 150px;
+  }
+}
+
 @-webkit-keyframes startAppMainContent {
   0% {
     -webkit-transform: scale(0);
