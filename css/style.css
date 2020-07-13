@@ -42,8 +42,8 @@
 .start__main-text {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  margin-bottom: 64px;
-  font-size: 80px;
+  margin-bottom: 62px;
+  font-size: 70px;
   font-family: "Ubuntu", arial;
   font-weight: 700;
   -webkit-animation: onePulse both 1s .3s;
@@ -228,8 +228,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 344px;
-  height: 440px;
+  width: 300px;
+  height: 390px;
   background-color: white;
   border-radius: 31px;
   -webkit-box-shadow: 1px 1px 20px #DEDEDE;
@@ -270,6 +270,7 @@
   margin: -20px 0 0 0;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  font-size: 18px;
   color: #CCCCCC;
 }
 
@@ -285,6 +286,7 @@
   padding-left: 30px;
   text-align: left;
   color: #CCCCCC;
+  font-size: 18px;
 }
 
 .search .country__infected::after {
@@ -293,7 +295,7 @@
   bottom: -10px;
   left: 30px;
   display: block;
-  width: 283px;
+  width: 240px;
   height: 1px;
   background-color: #CCCCCC;
 }
@@ -309,6 +311,7 @@
   text-align: right;
   padding-right: 30px;
   color: #202121;
+  font-size: 18px;
 }
 
 .search .country__recovered {
@@ -323,6 +326,7 @@
   padding-left: 30px;
   text-align: left;
   color: #CCCCCC;
+  font-size: 18px;
 }
 
 .search .country__recovered::after {
@@ -331,7 +335,7 @@
   bottom: -10px;
   left: 30px;
   display: block;
-  width: 283px;
+  width: 240px;
   height: 1px;
   background-color: #CCCCCC;
 }
@@ -347,6 +351,7 @@
   text-align: right;
   padding-right: 30px;
   color: #202121;
+  font-size: 18px;
 }
 
 .search .country__death {
@@ -361,6 +366,7 @@
   padding-left: 30px;
   text-align: left;
   color: #CCCCCC;
+  font-size: 18px;
 }
 
 .search .country__death::after {
@@ -369,7 +375,7 @@
   bottom: -10px;
   left: 30px;
   display: block;
-  width: 283px;
+  width: 240px;
   height: 1px;
   background-color: #CCCCCC;
 }
@@ -385,6 +391,7 @@
   text-align: right;
   padding-right: 30px;
   color: #202121;
+  font-size: 18px;
 }
 
 .search .country__daily-infected {
@@ -400,6 +407,7 @@
   text-align: left;
   margin-top: 20px;
   color: #CCCCCC;
+  font-size: 18px;
 }
 
 .search .country__daily-infected::after {
@@ -408,7 +416,7 @@
   bottom: -10px;
   left: 30px;
   display: block;
-  width: 283px;
+  width: 240px;
   height: 1px;
   background-color: #CCCCCC;
 }
@@ -425,6 +433,7 @@
   padding-right: 30px;
   margin-top: 20px;
   color: #202121;
+  font-size: 18px;
 }
 
 .search .country__data {

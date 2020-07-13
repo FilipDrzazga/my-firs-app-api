@@ -75,8 +75,8 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        width: 344px;
-        height: 440px;
+        width: 300px;
+        height: 390px;
         background-color: white;
         border-radius: 31px;
         box-shadow: $border-shadow;
@@ -104,6 +104,7 @@
             @include font-style-conteiner;
             margin: -20px 0 0 0;
             flex-basis: 100%;
+            font-size: 18px;
             color: $dark-snow-color;
         }
 
@@ -113,6 +114,7 @@
             padding-left: 30px;
             text-align: left;
             color: $dark-snow-color;
+            font-size: 18px;
 
             &::after {
                 @include after;
@@ -124,6 +126,7 @@
             text-align: right;
             padding-right: 30px;
             color: $black-color;
+            font-size: 18px;
         }
 
         &__recovered {
@@ -132,6 +135,7 @@
             padding-left: 30px;
             text-align: left;
             color: $dark-snow-color;
+            font-size: 18px;
 
             &::after {
                 @include after;
@@ -143,6 +147,7 @@
             text-align: right;
             padding-right: 30px;
             color: $black-color;
+            font-size: 18px;
         }
 
         &__death {
@@ -151,6 +156,7 @@
             padding-left: 30px;
             text-align: left;
             color: $dark-snow-color;
+            font-size: 18px;
 
             &::after {
                 @include after;
@@ -162,6 +168,7 @@
             text-align: right;
             padding-right: 30px;
             color: $black-color;
+            font-size: 18px;
         }
 
         &__daily-infected {
@@ -171,6 +178,7 @@
             text-align: left;
             margin-top: 20px;
             color: $dark-snow-color;
+            font-size: 18px;
 
             &::after {
                 @include after;
@@ -183,6 +191,7 @@
             padding-right: 30px;
             margin-top: 20px;
             color: $black-color;
+            font-size: 18px;
         }
 
         &__data {
