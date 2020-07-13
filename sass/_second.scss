@@ -76,7 +76,7 @@
         justify-content: center;
         align-items: center;
         width: 300px;
-        height: 390px;
+        height: 370px;
         background-color: white;
         border-radius: 31px;
         box-shadow: $border-shadow;
@@ -211,12 +211,86 @@
     }
 }
 
+@media (min-width:360px) {
+    .search {
+        &__input {
+            width: 335px;
+            height: 50px;
+            margin: 0px auto -23px;
+            font-size: 20px;
+        }
+
+        .country {
+            width: 335px;
+            height: 460px;
+
+            &__name {
+                font-size: 20px;
+            }
+
+            &__infected {
+                font-size: 20px;
+
+                &::after {
+                    @include after;
+                    width: 275px;
+                }
+            }
+
+            &__infected-number {
+                font-size: 20px;
+            }
+
+            &__recovered {
+                font-size: 20px;
+
+                &::after {
+                    @include after;
+                    width: 275px;
+                }
+            }
+
+            &__recovered-number {
+                font-size: 20px;
+            }
+
+            &__death {
+                font-size: 20px;
+
+                &::after {
+                    @include after;
+                    width: 275px;
+                }
+            }
+
+            &__death-number {
+                font-size: 20px;
+            }
+
+            &__daily-infected {
+                font-size: 20px;
+
+                &::after {
+                    @include after;
+                    width: 275px;
+                }
+            }
+
+            &__daily-number {
+                font-size: 20px;
+            }
+
+        }
+    }
+}
+
 @media (min-width:459px) {
     .search {
         height: 100%;
         justify-content: center;
 
         &__input {
+            width: 300px;
             margin: 10px 150px;
         }
 

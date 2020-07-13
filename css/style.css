@@ -102,6 +102,13 @@
   color: white;
 }
 
+@media (min-width: 360px) {
+  .start__main-text {
+    margin-bottom: 40px;
+    font-size: 75px;
+  }
+}
+
 @media (min-width: 640px) {
   .start {
     height: 100%;
@@ -229,7 +236,7 @@
       -ms-flex-align: center;
           align-items: center;
   width: 300px;
-  height: 390px;
+  height: 370px;
   background-color: white;
   border-radius: 31px;
   -webkit-box-shadow: 1px 1px 20px #DEDEDE;
@@ -460,6 +467,90 @@
   color: #202121;
 }
 
+@media (min-width: 360px) {
+  .search__input {
+    width: 335px;
+    height: 50px;
+    margin: 0px auto -23px;
+    font-size: 20px;
+  }
+  .search .country {
+    width: 335px;
+    height: 460px;
+  }
+  .search .country__name {
+    font-size: 20px;
+  }
+  .search .country__infected {
+    font-size: 20px;
+  }
+  .search .country__infected::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 30px;
+    display: block;
+    width: 240px;
+    height: 1px;
+    background-color: #CCCCCC;
+    width: 275px;
+  }
+  .search .country__infected-number {
+    font-size: 20px;
+  }
+  .search .country__recovered {
+    font-size: 20px;
+  }
+  .search .country__recovered::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 30px;
+    display: block;
+    width: 240px;
+    height: 1px;
+    background-color: #CCCCCC;
+    width: 275px;
+  }
+  .search .country__recovered-number {
+    font-size: 20px;
+  }
+  .search .country__death {
+    font-size: 20px;
+  }
+  .search .country__death::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 30px;
+    display: block;
+    width: 240px;
+    height: 1px;
+    background-color: #CCCCCC;
+    width: 275px;
+  }
+  .search .country__death-number {
+    font-size: 20px;
+  }
+  .search .country__daily-infected {
+    font-size: 20px;
+  }
+  .search .country__daily-infected::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 30px;
+    display: block;
+    width: 240px;
+    height: 1px;
+    background-color: #CCCCCC;
+    width: 275px;
+  }
+  .search .country__daily-number {
+    font-size: 20px;
+  }
+}
+
 @media (min-width: 459px) {
   .search {
     height: 100%;
@@ -468,6 +559,7 @@
             justify-content: center;
   }
   .search__input {
+    width: 300px;
     margin: 10px 150px;
   }
   .search__button {

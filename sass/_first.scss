@@ -65,6 +65,15 @@
     }
 }
 
+@media (min-width:360px) {
+    .start {
+        &__main-text {
+            margin-bottom: 40px;
+            font-size: 75px;
+        }
+    }
+}
+
 @media (min-width:640px) {
     .start {
         height: 100%;
