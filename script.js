@@ -26,7 +26,7 @@ class AppCovid {
 
     hiddenFirstBackground() {
         this.startAppBtn.addEventListener("click", () => {
-            this.firstAppBackground.style.left = "-100%";
+            this.firstAppBackground.style.left = "-120%";
             this.h1.classList.add("search__main-text--animation");
             this.searchBtn.classList.add("search__button--aply");
             this.input.classList.add("search__input--animation");
@@ -93,7 +93,6 @@ class AppCovid {
         this.searchBtn.addEventListener('click', () => {
             this.getFlagFromApi()
             this.showStatsInApp()
-            // this.counterResults()
         })
     }
 }

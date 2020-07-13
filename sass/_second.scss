@@ -1,14 +1,11 @@
 .search {
     position: relative;
-    top: 0;
-    left: 0%;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 100%;
-    height: 100%;
     background-color: $snow-color;
 
     &__main-text {
@@ -203,4 +200,21 @@
             color: $black-color;
         }
     }
+}
+
+@media (min-width:459px) {
+    .search {
+        height: 100%;
+        justify-content: center;
+
+        &__input {
+            margin: 10px 160px;
+        }
+
+        &__button {
+            margin: 40px 50px 0;
+        }
+
+    }
+
 }
