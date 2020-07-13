@@ -190,11 +190,11 @@
       -ms-grid-row-align: center;
       align-self: center;
   display: block;
-  width: 344px;
-  height: 47px;
-  margin: 0px 15px -25px;
-  padding: 12px 0px 12px 18px;
-  font-size: 20px;
+  width: 300px;
+  height: 40px;
+  margin: 0px auto -23px;
+  padding: 6px 0px 6px 18px;
+  font-size: 18px;
   font-weight: 300;
   font-family: "Ubuntu", arial;
   background-color: white;
