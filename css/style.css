@@ -158,6 +158,9 @@
   font-size: 20px;
   font-family: "Ubuntu", arial;
   font-weight: 700;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
 .search__main-text--animation {
@@ -171,15 +174,19 @@
 }
 
 .search__button {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   border-radius: 50px;
   border: none;
   background-color: #5ee2d2;
   width: 62px;
   height: 62px;
-  margin: 0px 15px -10px;
+  margin: 0px 15px 0px;
   cursor: pointer;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
 }
 
 .search__button--aply {
@@ -199,7 +206,7 @@
   display: block;
   width: 300px;
   height: 40px;
-  margin: 0px auto -23px;
+  margin: 30px auto 0px;
   padding: 6px 0px 6px 18px;
   font-size: 18px;
   font-weight: 300;
@@ -214,6 +221,9 @@
   -webkit-appearance: button;
      -moz-appearance: button;
           appearance: button;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 .search__input--animation {
@@ -241,6 +251,9 @@
   border-radius: 31px;
   -webkit-box-shadow: 1px 1px 20px #DEDEDE;
           box-shadow: 1px 1px 20px #DEDEDE;
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
 }
 
 .search .country--animation {
